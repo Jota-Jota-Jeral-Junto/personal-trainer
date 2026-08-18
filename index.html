@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Trainer | Transforme sua vida</title>
+    
+    <!-- Fontes do Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS (Seguindo a estrutura solicitada) -->
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/themes.css">
+    <link rel="stylesheet" href="CSS/components.css">
+    <link rel="stylesheet" href="CSS/home.css">
+    <link rel="stylesheet" href="CSS/principal.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+<body>
+
+    <!-- NavBar Fixa -->
+    <header class="navbar">
+        <div class="logo">
+            <img src="assets/img/logo/logo.svg" alt="Logo Personal Trainer" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'40\'><text x=\'0\' y=\'25\' font-family=\'Arial\' font-size=\'20\' font-weight=\'bold\' fill=\'var(--primary-color)\'>PERSONAL</text></svg>'">
+        </div>
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#precos">Preços</a>
+            <a href="#contatos">Contato</a>
+        </nav>
+        <button id="theme-toggle" class="theme-btn" aria-label="Mudar tema">
+            <span id="theme-icon">🌙</span>
+        </button>
+    </header>
+
+    <!-- Seção Home -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Professor [Nome do Professor]</h1>
+            <p class="chamativo">Treinamento inteligente para resultados reais. Transforme sua saúde com acompanhamento especializado na academia ou no conforto do seu lar.</p>
+            <a href="#contatos" class="btn-primary">Comece Agora</a>
+        </div>
+        <div class="hero-image">
+            <!-- Coloque a foto professor-hero.webp na pasta correta -->
+            <img src="assets/img/hero/professor-hero.webp" alt="Foto do Personal Trainer" class="img-fluid" placeholder>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section">
+        <div class="section-header">
+            <h2>Um pouco sobre mim</h2>
+        </div>
+        <div class="sobre-container">
+            <div class="sobre-midia instagram-format">
+                <!-- Pode ser trocado pelo vídeo usando a tag <video> e apontando para assets/videos/sobre-professor.mp4 -->
+                <img src="assets/img/sobre/professor-01.webp" alt="Professor em ação">
+                <div class="insta-overlay">
+                    <span>@seuinstagram</span>
+                </div>
+            </div>
+            <div class="sobre-card">
+                <h3>Apaixonado por Movimento</h3>
+                <p>Olá! Sou graduando em Educação Física com especialização voltada para o treinamento de força (musculação).</p>
+                <p>Meu foco é proporcionar qualidade de vida e resultados estéticos com segurança. Tenho forte atuação tanto no ambiente de academias quanto em <strong>atendimentos a domicílio</strong>, criando rotinas adaptadas para todas as idades, incluindo um cuidado especial com o público idoso.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Serviços -->
+    <section id="servicos" class="section bg-alt">
+        <div class="section-header">
+            <h2>Meus Serviços</h2>
+        </div>
+        <div class="cards-grid">
+            <div class="card">
+                <img src="assets/img/servicos/musculacao.webp" alt="Musculação">
+                <h3>Musculação em Academia</h3>
+                <p>Treinos periodizados focados em hipertrofia, emagrecimento e condicionamento físico no ambiente da academia.</p>
+            </div>
+            <div class="card destaque">
+                <img src="assets/img/servicos/domicilio.webp" alt="Treino em Domicílio">
+                <h3>Atendimento a Domicílio</h3>
+                <p>Conforto e segurança. Levo o treino até você! Ideal para quem tem pouco tempo ou prefere treinar em casa. Excelente para a terceira idade.</p>
+                <span class="badge">Mais Procurado</span>
+            </div>
+            <div class="card">
+                <img src="assets/img/servicos/acompanhamento.webp" alt="Acompanhamento">
+                <h3>Consultoria Online</h3>
+                <p>Planilhas de treino personalizadas enviadas mensalmente com suporte via WhatsApp para você treinar onde quiser.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Preços -->
+    <section id="precos" class="section">
+        <div class="section-header">
+            <h2>Planos e Preços</h2>
+            <p>Escolha a melhor opção para a sua rotina</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>2x por semana</h3>
+                <div class="price">R$ X<span>/mês</span></div>
+                <ul>
+                    <li>Avaliação física mensal</li>
+                    <li>Treino personalizado</li>
+                    <li>Suporte via WhatsApp</li>
+                </ul>
+                <a href="#contatos" class="btn-outline">Agendar</a>
+            </div>
+            <div class="price-card premium">
+                <h3>3x por semana</h3>
+                <div class="price">R$ X<span>/mês</span></div>
+                <ul>
+                    <li>Avaliação física mensal</li>
+                    <li>Treino personalizado</li>
+                    <li>Suporte via WhatsApp priorizado</li>
+                    <li>Acompanhamento nutricional básico</li>
+                </ul>
+                <a href="#contatos" class="btn-primary">Agendar</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contatos -->
+    <section id="contatos" class="section bg-alt">
+        <div class="section-header">
+            <h2>Vamos conversar?</h2>
+        </div>
+        <div class="contato-links">
+            <a href="https://wa.me/seunumerodevesercolocadoaqui" class="contato-item whatsapp">
+                <i>📱</i> WhatsApp
+            </a>
+            <a href="https://instagram.com/seuinstagram" class="contato-item instagram">
+                <i>📸</i> Instagram
+            </a>
+            <a href="mailto:seuemail@email.com" class="contato-item email">
+                <i>✉️</i> E-mail
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Professor [Nome]. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts (Seguindo a estrutura solicitada) -->
+    <script src="JS/theme.js"></script>
+    <script src="JS/animations.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
