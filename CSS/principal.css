@@ -1,10 +1,18 @@
 /* Sobre */
 .sobre-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Alinha o topo do print com o topo do card de texto */
+    justify-content: center;
     gap: 50px;
 }
-.sobre-midia { flex: 1; }
+
+.sobre-midia { 
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    position: relative;
+}
+
 .sobre-card {
     flex: 1.5;
     background: var(--card-bg);

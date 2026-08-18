@@ -1,4 +1,4 @@
-// Adiciona uma animação suave ao rolar a página (efeito Fade In)
+// ====== Animação de Surgimento (Fade In) das Seções ======
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -8,7 +8,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.1 });
 
-// Aplicando aos elementos quando a página carrega
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll('.section');
     sections.forEach(section => {
@@ -18,16 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 });
-// ====== Efeito Paralaxe nas Imagens ======
+
+// ====== Efeito Paralaxe (Apenas na imagem do topo / Hero) ======
 window.addEventListener('scroll', () => {
-    // Pega a posição da rolagem
     const scrolled = window.scrollY;
     
-    // Seleciona a imagem do topo (Hero) e a imagem da seção "Sobre"
-    const parallaxImages = document.querySelectorAll('.hero-image img, .sobre-midia img');
+    // Alvo restrito apenas à imagem do topo para não afetar o print do Instagram
+    const parallaxImages = document.querySelectorAll('.hero-image img');
 
     parallaxImages.forEach(img => {
-        // Multiplicador de velocidade (0.15 = move devagarzinho criando a ilusão 3D)
         const speed = 0.15;
         img.style.transform = `translateY(${scrolled * speed}px)`;
     });
