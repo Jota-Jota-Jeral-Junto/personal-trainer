@@ -1,0 +1,109 @@
+/* Sobre */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.sobre-midia { flex: 1; }
+.sobre-card {
+    flex: 1.5;
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* Serviços */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.card {
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card img {
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.card.destaque {
+    border: 2px solid var(--primary-color);
+}
+.badge {
+    position: absolute;
+    top: -15px; right: 20px;
+    background: var(--primary-color);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Preços */
+.pricing-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.price-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--shadow);
+    flex: 1;
+    max-width: 350px;
+}
+.price-card.premium {
+    transform: scale(1.05);
+    border-top: 5px solid var(--primary-color);
+}
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 20px 0;
+}
+.price span { font-size: 1rem; color: var(--text-muted); }
+.price-card ul { list-style: none; margin-bottom: 30px; }
+.price-card ul li { margin-bottom: 10px; color: var(--text-muted); }
+
+/* Contatos */
+.contato-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.contato-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: var(--card-bg);
+    border-radius: 30px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+.contato-item:hover { transform: scale(1.05); }
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--bg-color);
+    color: var(--text-muted);
+}

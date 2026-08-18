@@ -1,0 +1,25 @@
+:root {
+    /* Tema Claro (Default) */
+    --bg-color: #fdfbf9;
+    --bg-alt: #f3f0eb;
+    --text-color: #2d3436;
+    --text-muted: #636e72;
+    --primary-color: #e17055; /* Laranja moderno, esportivo e humano */
+    --primary-hover: #d63031;
+    --card-bg: #ffffff;
+    --shadow: 0 10px 30px rgba(0,0,0,0.05);
+    --border-radius: 16px;
+    --transition: all 0.3s ease-in-out;
+}
+
+[data-theme="dark"] {
+    /* Tema Escuro */
+    --bg-color: #121212;
+    --bg-alt: #1e1e1e;
+    --text-color: #f5f6fa;
+    --text-muted: #b2bec3;
+    --primary-color: #fab1a0;
+    --primary-hover: #ff7675;
+    --card-bg: #2d3436;
+    --shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
