@@ -8,6 +8,12 @@
 
 body {
     background-color: var(--bg-color);
+    
+    /* Fundo de Halteres Clássico e Paralaxe fixo */
+    background-image: var(--bg-pattern);
+    background-attachment: fixed;
+    background-position: center;
+    
     color: var(--text-color);
     transition: var(--transition);
     line-height: 1.6;

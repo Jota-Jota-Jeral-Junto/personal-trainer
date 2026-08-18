@@ -1,25 +1,30 @@
 :root {
-    /* Tema Claro (Default) */
+    /* Tema Claro (Original) */
     --bg-color: #fdfbf9;
-    --bg-alt: #f3f0eb;
+    --bg-alt: rgba(0, 0, 0, 0.03); 
     --text-color: #2d3436;
     --text-muted: #636e72;
-    --primary-color: #e17055; /* Laranja moderno, esportivo e humano */
+    --primary-color: #ff5100;
     --primary-hover: #d63031;
     --card-bg: #ffffff;
     --shadow: 0 10px 30px rgba(0,0,0,0.05);
     --border-radius: 16px;
     --transition: all 0.3s ease-in-out;
+    
+    /* Padrão de Halteres Escuros (Tema Claro) - Opacidade 15% */
+    --bg-pattern: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='rotate(45 40 40)' fill='%23000000' fill-opacity='0.15'%3E%3Cpath d='M30 36 h20 v8 h-20 z M24 28 h4 v24 h-4 z M52 28 h4 v24 h-4 z M18 34 h3 v12 h-3 z M59 34 h3 v12 h-3 z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 [data-theme="dark"] {
-    /* Tema Escuro */
-    --bg-color: #121212;
-    --bg-alt: #1e1e1e;
+    /* Tema Escuro (Paleta Cinza Premium) */
+    --bg-color: #0f1115; 
+    --bg-alt: rgba(255, 255, 255, 0.02); 
     --text-color: #f5f6fa;
-    --text-muted: #b2bec3;
-    --primary-color: #fab1a0;
-    --primary-hover: #ff7675;
-    --card-bg: #2d3436;
-    --shadow: 0 10px 30px rgba(0,0,0,0.3);
+    --text-muted: #8b92a5;
+    --primary-hover: #cccccc;
+    --card-bg: #1e2228; /* Fundo sólido para os cartões no modo escuro */
+    --shadow: 0 15px 30px rgba(0,0,0,0.4);
+
+    /* Padrão de Halteres Claros (Tema Escuro) - Opacidade 4% */
+    --bg-pattern: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg transform='rotate(45 40 40)' fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M30 36 h20 v8 h-20 z M24 28 h4 v24 h-4 z M52 28 h4 v24 h-4 z M18 34 h3 v12 h-3 z M59 34 h3 v12 h-3 z'/%3E%3C/g%3E%3C/svg%3E");
 }

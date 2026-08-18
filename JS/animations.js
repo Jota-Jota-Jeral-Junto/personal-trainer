@@ -18,3 +18,17 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 });
+// ====== Efeito Paralaxe nas Imagens ======
+window.addEventListener('scroll', () => {
+    // Pega a posição da rolagem
+    const scrolled = window.scrollY;
+    
+    // Seleciona a imagem do topo (Hero) e a imagem da seção "Sobre"
+    const parallaxImages = document.querySelectorAll('.hero-image img, .sobre-midia img');
+
+    parallaxImages.forEach(img => {
+        // Multiplicador de velocidade (0.15 = move devagarzinho criando a ilusão 3D)
+        const speed = 0.15;
+        img.style.transform = `translateY(${scrolled * speed}px)`;
+    });
+});

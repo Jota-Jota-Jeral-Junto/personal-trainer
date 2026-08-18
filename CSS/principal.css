@@ -43,7 +43,7 @@
     position: absolute;
     top: -15px; right: 20px;
     background: var(--primary-color);
-    color: white;
+    color: var(--bg-color); /* Ajustado para melhor contraste */
     padding: 5px 15px;
     border-radius: 20px;
     font-size: 0.8rem;
